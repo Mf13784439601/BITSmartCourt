@@ -1,4 +1,9 @@
 # BITSmartCourt
+LDA主题模型的训练与json结果的生成：
+使用click_user_portrait.py 文件进行，先 利用函数  users_click_files = generate_click_contexts_from_json( "users_click_contexts_alldata.json","click") 从之前从txt获xml文件夹中生成的json数据(session类),然后利用函数 extract_theme_from_click_file 进行LDA模型的训练保存与 生成json最终结果数据。其中只需修改相应参数 路径/文件即可。
+
+
+
 BIT Smart Court Project of School of Computer Science
 Smart Court目前包括LDA文件夹，LDA文件夹内目前有四个py文件 session用是户搜索session Bean  对应搜索日志里的一条log session 
            num_topics.py 用来决定 LDA模型的最优主题数
